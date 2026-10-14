@@ -12,11 +12,11 @@
 
 ## GitHub Pages 무료 배포
 
-1. GitHub에서 새 공개 저장소를 만듭니다.
-2. 이 폴더 안의 `index.html`과 `README.md`를 저장소 최상위에 올립니다.
-3. 저장소의 **Settings → Pages**로 이동합니다.
-4. **Build and deployment**에서 **Deploy from a branch**를 선택하고 `main` 브랜치의 `/ (root)`를 저장합니다.
-5. 잠시 후 같은 Pages 화면에 표시되는 주소로 접속합니다.
+1. 공개 저장소에 소스를 올립니다.
+2. 저장소의 **Settings → Pages**로 이동합니다.
+3. **Build and deployment**의 **Source**에서 **GitHub Actions**를 선택합니다.
+4. `main` 브랜치에 커밋을 올리면 `.github/workflows/deploy-pages.yml`이 사이트를 자동 배포합니다.
+5. 배포가 끝나면 `https://<사용자명>.github.io/<저장소명>/` 주소로 접속합니다.
 
 수정한 파일을 `main` 브랜치에 올리면 GitHub Pages가 다시 배포합니다. 사용자 지정 도메인은 선택 사항이며 기본 Pages 주소는 무료입니다.
 
